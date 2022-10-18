@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+#root {
+    background-color: #282c34;
+    color: white;
+    min-height: 100vh;
+}
+
+html {
+    min-width: 100vw;
+}
+
+.App {
+    text-align: center;
+    padding: 0 2rem;
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+h1 {
+    margin: 1rem 0;
+    text-decoration: underline;
+    text-decoration-color: #E7BAD1;
+}
+
+a {
+    color: #0094FA;
+}
+
+header p {
+    margin: 0.5rem 0;
+}
+
+.section {
+    text-align: left;
+    padding-bottom: 2rem;
+}
+
+.section-content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-content .section-text {
+    width: 40rem;
+}
+
+.section-content img {
+    width: 45rem;
+    height: 100%;
+}
+
+h2 {
+    margin-bottom: 0.5rem;
+    text-decoration: underline;
+    text-decoration-color: #DFF1FF;
+}
+
+h3 {
+    margin: 0;
+    color: #E7BAD1;
+}
+
+.redesign-content {
+    margin: 0 3rem;
+}
+
+.redesign-content img {
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.redesign-content p {
+    margin: 1.5rem 0 0 0;
+    font-weight: bolder;
+}
+
+iframe {
+    width: calc(100% - 6rem);
+    margin: 0 3rem 2rem 3rem;
+    height: 45rem;
+}
+
+.summary {
+    padding-right: 15rem;
+    font-size: larger;
+    margin-bottom: 1.5rem;
+    margin-top: 0;
+    color: #DFF1FF;
+}
+
+.description {
+    padding-right: 15rem;
+}
+
+.App-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: calc(10px + 2vmin);
+}

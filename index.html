@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Responsive Redesign</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <div id="root">
+      <div class="App">
+        <header class="App-header">
+          <h1>Responsive Redesign</h1>
+          <p>In order to investigate responsive design, I chose a website I thought had a flawed interface and redesigned it to be fix the flaws I saw and design a responsive site.</p>
+        </header>
+  
+        <div class="section">
+          <h2>Identifying Usability Problems</h2>
+          <p class="summary">I first chose a website and analyzed its interface and what I thought could be improved about it. I paid special attention to usability, learnability, memorability, and its agreement with users' conceptual models.</p>
+          <div class="section-content">
+            <div class="section-text">
+              <h3>1. Picking a Website</h3>
+              <p>I picked the <a href="https://man7.org/linux/man-pages/man1/cat.1.html#top_of_page" target="_blank" rel="noreferrer">Linux Manual Page</a> for the cat command.
+              I chose this website because I used the manual pages a lot in my CS courses and always thought that it was confusing and poorly formatted; It was a necessary resource that I really disliked using and thought would be an interesting subject to analyze.
+              </p>
+              <h3>2. Finding Problems</h3>
+              <p>The main issues with the page is it's lack of responsiveness and unintuitive organization:</p>
+              <ul>
+                <li>unresponsive for mobile layouts or varying widths</li>
+                <ul>
+                  <li>excessive whitespace on desktop</li>
+                  <li>inconsistent wrapping (overflow for the content, but wrapping on header, footer, and navigation menu)</li>
+                </ul>
+                <li>lack of intuitive text size hierarchy, especially without color</li>
+                <li> “top” link is unclear that it is an actual link without the color</li>
+              </ul>
+              <h3>3. Accessibility</h3>
+              <p>In terms of accessibility, the biggest problems had to do with page layout, which I agreed with. There were no page regions within the html (e.g. header, footer) and layout tables were used that didn't actually have content meant for tables, which is confusing for screen readers. One issue I didn't agree with was the redundant links, which sometimes I felt were useful for clarity.</p>
+            </div>
+            <div class="section-images">
+              <img src="assets/cat.png" alt="cat original site"></img>
+            </div>
+          </div> 
+        </div>
+  
+        <div class="section" id="redesign">
+          <h2>Visual Redesign</h2>
+          <p class="summary">I then went through the iterative process of wireframing to redesign the site in order to address the issues I found.</p>
+            <h3>1. Low-fidelity Wireframing</h3>
+            <p class="description">I designed lofi wireframes on Balsamiq that I believe address the issues I identified. Below, I've annotated where and how it does so.</p>
+            <div class="redesign-content">
+              <p>Annotated LoFi Wireframe for Desktop: </p>
+              <img src="assets/desktop-lofi.png" alt="annotated lofi wireframe for desktop"></img>
+              
+              <p>Annotated LoFi Wireframe for Phone and Tablet: </p>
+              <img src="assets/mobile-lofi.png" alt="annotated lofi wireframe for mobile"></img>
+            </div>
+            <h3>2. Visual Design Style Guide</h3>
+            <p>After lofi wireframing, I further developed my designs and created a visual style guide for the common or significant components in my interface.</p>
+            <div class="redesign-content">
+              <img src="assets/style.png" alt="visual design style guide"></img>
+            </div>
+            <h3>3. High-Fidelity Wireframing</h3>
+            <p class="description">Finally, I created a hifi wireframe for desktop, tablet, and mobile on Figma. Below are the annotated screenshots, but you can view the wireframes in full <a href="https://www.figma.com/file/gmVcPXHbTmPO3FuCyGNdEC/Man-Redesign?node-id=0%3A1"  target="_blank" rel="noreferrer">here</a>. I mainly made notes on how components are reused or not as well as key layout choices.</p>
+            <div class="redesign-content">
+              <p>Annotated HiFi Wireframe for Desktop: </p>
+              <img src="assets/desktop-hifi.png" alt="annotated hifi wireframe for desktop"></img>
+              
+              <p>Annotated HiFi Wireframe for Phone and Tablet: </p>
+              <img src="assets/mobile-hifi.png" alt="annotated hifi wireframe for mobile"></img>
+            </div>
+          </div> 
+  
+          <div class="section">
+            <h2>Responsive Redesign</h2>
+            <p>Below is my finished redesigned website. Click <a href="https://upsettiger123.github.io/man-page-redesign" target="_blank" rel="noreferrer">here</a> to view the redesigned website in browser.</p>
+            <iframe src="https://upsettiger123.github.io/man-page-redesign" title="redesigned cat manual page"></iframe>
+          </div>
+        </div>
+    </div>
+  </body>
+</html>
